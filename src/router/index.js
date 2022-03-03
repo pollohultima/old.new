@@ -18,7 +18,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
-    {
+  {
     path: '/contacts',
     name: 'Contacts',
     component: () => import('../views/Contacts.vue')
@@ -32,7 +32,7 @@ const routes = [
     path: '/nftgallery',
     name: 'NftGallery',
     component: () => import('../views/NftGallery.vue')
-  },
+  }
 ]
 
 const router = new VueRouter({
